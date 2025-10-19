@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.devtools.ksp") // Necesario para Room
+
 }
 
 android {
@@ -75,4 +76,8 @@ dependencies {
 
     // --- RecyclerView (para listas de tareas)
     implementation(libs.androidx.recyclerview)
+    implementation(libs.gson.v2110)
+    implementation(libs.retrofit.v290)
+    implementation(libs.converter.gson.v290)
+    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
 }
